@@ -1,0 +1,20 @@
+{
+  "extends": "nx/presets/npm.json",
+  "npmScope": "infra",
+  "affected": {
+    "defaultBase": "origin/main"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["print-root"]
+      }
+    }
+  },
+  "targetDefaults": {
+    "print-root": {
+      "inputs": ["default"]
+    }
+  }
+}
