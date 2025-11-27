@@ -1,0 +1,13 @@
+{
+  "name": "rds-dev",
+  "root": "envs/dev/rds",
+  "projectType": "application",
+  "targets": {
+    "print-root": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "echo envs/dev/rds"
+      }
+    }
+  }
+}

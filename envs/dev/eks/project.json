@@ -1,0 +1,13 @@
+{
+  "name": "eks-dev",
+  "root": "envs/dev/eks",
+  "projectType": "application",
+  "targets": {
+    "print-root": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "echo envs/dev/eks"
+      }
+    }
+  }
+}

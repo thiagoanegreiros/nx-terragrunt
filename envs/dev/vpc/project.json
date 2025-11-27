@@ -1,0 +1,13 @@
+{
+  "name": "vpc-dev",
+  "root": "envs/dev/vpc",
+  "projectType": "application",
+  "targets": {
+    "print-root": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "echo envs/dev/vpc"
+      }
+    }
+  }
+}
