@@ -24,4 +24,4 @@ jobs:
 
       - name: Print affected folders
         run: |
-          npx nx affected --target=print-root --base=origin/main --head=${{ github.sha }}
+          npx nx affected --target=print-root --base=HEAD~1 --head=HEAD
