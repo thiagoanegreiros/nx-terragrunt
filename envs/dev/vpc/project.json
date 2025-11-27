@@ -6,7 +6,7 @@
     "print-root": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "echo envs/dev/vpc"
+        "command": "echo envs/dev/vpc2"
       }
     }
   }

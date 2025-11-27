@@ -1,0 +1,18 @@
+jobs:
+  changed-folders:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # importante para o Nx ver o histórico
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm install
+
+      - name: Print affected folders
+        run: |
+          npx nx affected --target=print-root --base=origin/main --head=${{ github.sha }}
